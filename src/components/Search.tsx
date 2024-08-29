@@ -111,7 +111,7 @@ export default function Search() {
       <div className="search">
         <div className="d-flex flex-column p-4 text-center">
           <span className="font-weight-semibold display-4">{greetingRef.current}{greetingIcon}</span>
-          <span className="display-4">Let's find you something tasty to make!</span>
+          <span className="fs-4">Let's find you something tasty to make!</span>
         </div>
 
         {/* Search bar for ingredients */}
@@ -123,16 +123,16 @@ export default function Search() {
             placeholder="Enter ingredients"
             className="form-control w-50"
           />
-          <i className="bi bi-search h5 cursor-pointer" onClick={handleSearch}></i>
+          <i className="bi bi-search h5 cursor-pointer" onClick={handleSearch}  style={{ cursor: 'pointer' }}></i>
         </div>
 
         {/* Fetch and map through recipe data */}
         {loading ? (
-          <p className="display-4 text-center">Loading...</p>
+          <p className="fs-5 text-center">Loading...</p>
         ) : (
           <>
             {searchClicked && searchIngredients && (
-              <p className="pt-2 text-center display-4">Results for <strong>"{searchIngredients}"</strong></p>
+              <p className="pt-2 text-center fs-3">Results for <strong>"{searchIngredients}"</strong></p>
             )}
 
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
