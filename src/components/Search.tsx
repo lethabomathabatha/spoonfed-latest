@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import '../App.css';
+import Carousel from './Carousel';
 // import { SunFill, MoonFill, Clock, Heart, ArrowDownLeft, People } from 'react-bootstrap-icons';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -108,6 +109,7 @@ export default function Search() {
 
   return (
     <>
+    <Carousel />
       <div className="search">
         <div className="d-flex flex-column p-4 text-center">
           <span className="font-weight-semibold display-4">{greetingRef.current}{greetingIcon}</span>

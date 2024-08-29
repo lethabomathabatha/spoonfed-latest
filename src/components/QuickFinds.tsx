@@ -71,8 +71,8 @@ export default function QuickFinds() {
   return (
     <>
       {/* Quick picks */}
-      <div className="d-flex flex-wrap gap-3 m-4 flex-row">
-      
+      <div className="d-flex flex-wrap gap-3 m-4 flex-row justify-content-center  ">
+    
         <button onClick={handleChickenClick} className="btn btn-outline-dark py-2 px-3 rounded-pill">
           Chicken
         </button>
@@ -125,7 +125,7 @@ export default function QuickFinds() {
 
         {/* Conditionally render close button */}
         {foodTypes.length > 0 && (       
-          <i className="bi bi-heart-fill w-14 cursor-pointer" style={{ fontSize: '24px', color: 'black' }} onClick={closeFoodTypes}></i>
+          <i className="bi bi-arrow-down-left-circle-fill w-14 cursor-pointer" style={{ fontSize: '24px', color: 'black' }} onClick={closeFoodTypes}></i>
         )}
       </div>
     </>
