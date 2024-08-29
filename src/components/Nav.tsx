@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import '../App.css'
-import spoonfedLogo from './assets/images/spoonfed-logo.png'
+import spoonfedLogo from '../assets/images/spoonfed-logo.png'
 
 
 export default function Nav() {
