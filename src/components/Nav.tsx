@@ -10,7 +10,7 @@ export default function Nav() {
   return (
     <>
       <nav className=' flex justify-between items-center pl-2 pr-2 pt-5 pb-2 border-b-2 border-orange-500'>
-        <img src="./spoonfed-logo.png" alt="Spoonfed logo" width={90}/>
+        <img src="./src/assets/images/spoonfed-logo.png" alt="Spoonfed logo" width={90}/>
 
         {/* <div className='flex items-center'>
           <HeartIcon  className="h-7 w-7" />
