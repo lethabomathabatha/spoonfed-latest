@@ -9,11 +9,16 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-
+    env:
+      VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+      VITE_API_ID: ${{ secrets.VITE_API_ID }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
 
+      - name: Print secret value
+        run: echo $VITE_API_KEY
+        
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
