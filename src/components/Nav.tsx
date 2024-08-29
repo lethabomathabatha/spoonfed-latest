@@ -1,23 +1,24 @@
-// import { useState } from 'react'
-import '../App.css'
-import spoonfedLogo from '../assets/images/spoonfed-logo.png'
+import React from 'react';
+import '../App.css';
+import spoonfedLogo from '../assets/images/spoonfed-logo.png';
+import Badge from 'react-bootstrap/Badge';
+import Button from 'react-bootstrap/Button';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-
-export default function Nav() {
-
-  // const [favourites, setFavourites] = useState([])
-
-
+export default function NavBar() {
   return (
-    <>
-      <nav className=' flex justify-between items-center pl-2 pr-2 pt-5 pb-2 border-b-2 border-orange-500'>
-        <img src={spoonfedLogo} alt="Spoonfed logo" width={90}/>
-
-        {/* <div className='flex items-center'>
-          <HeartIcon  className="h-7 w-7" />
-          { favourites.length == 0 ? <p className='text-orange-500 '>0</p> : <p>{favourites.length}</p> }
-        </div> */}
-        
-      </nav>
-    </>
-  )}
+    <nav className="navbar navbar-light bg-white border-bottom px-5 py-4 w-100 position-fixed fixed-top z-100">
+      <div className="container-fluid d-flex justify-content-center">
+        <div className="d-flex align-items-center w-75" style={{ maxWidth: '1200px' }}>
+          <img src={spoonfedLogo} alt="Spoonfed logo" width={90} />
+        </div>
+        <div className="d-flex align-items-center ms-auto">
+          <i className="bi bi-heart-fill" style={{ fontSize: '24px', color: 'black' }}></i>
+          <span className="ms-2" style={{ fontSize: '18px', color: 'black' }}>0</span>
+        </div>
+      </div>
+      <div className='pb-3' style={{ borderBottom: '2px solid orange', width: '100%' }}></div>
+    </nav>
+  );
+}
