@@ -1,8 +1,8 @@
-import React from 'react';
+// import React from 'react';
 import '../App.css';
 import spoonfedLogo from '../assets/images/spoonfed-logo.png';
-import Badge from 'react-bootstrap/Badge';
-import Button from 'react-bootstrap/Button';
+// import Badge from 'react-bootstrap/Badge';
+// import Button from 'react-bootstrap/Button';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
